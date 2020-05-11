@@ -1,0 +1,25 @@
+sudo apt-get install openjdk-8-jre
+
+https://qiita.com/yoshi3/items/862e6d771cdea5ddf7f5
+https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
+https://www.jenkins.io/download/
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+http://127.0.0.1:8080
+
+jenkins -> Global Tool Configuration
+maven
+
+jenkins -> plugin
+JaCoCo
+Checkstyle
+FindBugs
+StepCounter
+
+
